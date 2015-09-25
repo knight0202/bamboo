@@ -147,7 +147,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
             user["name"] = su_name.text
             user.signUpInBackgroundWithBlock {
                 (succeeded: Bool, error: NSError?) -> Void in
-                if let error = error {
+                if error == nil {
                     let alert = UIAlertController(title: "오류", message:"회원가입이 실패했습니다. 다시 시도해주세요", preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.Default , handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)

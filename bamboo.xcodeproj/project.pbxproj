@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		DE0764181BB014830011DBE6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0764171BB014830011DBE6 /* libz.tbd */; };
 		DE07641A1BB014930011DBE6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0764191BB014930011DBE6 /* libsqlite3.0.tbd */; };
+		DED4CA3B1BB513D800957F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED4CA3A1BB513D800957F0F /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		DEFD86841BAABAD700D358E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD86831BAABAD700D358E2 /* AppDelegate.swift */; };
 		DEFD86871BAABAD700D358E2 /* bamboo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEFD86851BAABAD700D358E2 /* bamboo.xcdatamodeld */; };
 		DEFD86891BAABAD800D358E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD86881BAABAD800D358E2 /* ViewController.swift */; };
-		DEFD868C1BAABAD800D358E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFD868A1BAABAD800D358E2 /* Main.storyboard */; };
 		DEFD868E1BAABAD800D358E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEFD868D1BAABAD800D358E2 /* Images.xcassets */; };
 		DEFD86911BAABAD800D358E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEFD868F1BAABAD800D358E2 /* LaunchScreen.xib */; };
 		DEFD869D1BAABAD800D358E2 /* bambooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD869C1BAABAD800D358E2 /* bambooTests.swift */; };
@@ -50,12 +50,12 @@
 /* Begin PBXFileReference section */
 		DE0764171BB014830011DBE6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DE0764191BB014930011DBE6 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DED4CA3A1BB513D800957F0F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		DEFD867E1BAABAD700D358E2 /* bamboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bamboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFD86821BAABAD700D358E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEFD86831BAABAD700D358E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEFD86861BAABAD700D358E2 /* bamboo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bamboo.xcdatamodel; sourceTree = "<group>"; };
 		DEFD86881BAABAD800D358E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEFD868B1BAABAD800D358E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEFD868D1BAABAD800D358E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DEFD86901BAABAD800D358E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DEFD86961BAABAD800D358E2 /* bambooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bambooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,8 +145,8 @@
 				DEFD86CE1BABECA700D358E2 /* SignUpViewController.swift */,
 				DEFD86CC1BABE04700D358E2 /* LoginViewController.swift */,
 				DEFD86881BAABAD800D358E2 /* ViewController.swift */,
-				DEFD868A1BAABAD800D358E2 /* Main.storyboard */,
 				DEFD868D1BAABAD800D358E2 /* Images.xcassets */,
+				DED4CA3A1BB513D800957F0F /* Main.storyboard */,
 				DEFD868F1BAABAD800D358E2 /* LaunchScreen.xib */,
 				DEFD86851BAABAD700D358E2 /* bamboo.xcdatamodeld */,
 				DEFD86811BAABAD700D358E2 /* Supporting Files */,
@@ -293,10 +293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFD868C1BAABAD800D358E2 /* Main.storyboard in Resources */,
 				DEFD86CA1BABDF7100D358E2 /* main_splash.jpg in Resources */,
 				DEFD86911BAABAD800D358E2 /* LaunchScreen.xib in Resources */,
 				DEFD868E1BAABAD800D358E2 /* Images.xcassets in Resources */,
+				DED4CA3B1BB513D800957F0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,14 +342,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DEFD868A1BAABAD800D358E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEFD868B1BAABAD800D358E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DEFD868F1BAABAD800D358E2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

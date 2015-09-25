@@ -20,6 +20,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("!!!!")
+        
         self.emailText.delegate = self
         self.pwText.delegate = self
         
@@ -78,28 +80,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         self.actInd.startAnimating()
         
-        PFUser.logInWithUsernameInBackground(username!, password: password!) {
+        PFUser.logInWithUsernameInBackground(username!, password: password!){
             (user: PFUser?, error: NSError?) -> Void in
-            
-            self.actInd.stopAnimating()
-            
             if user != nil {
-                // Do stuff after successful login.
-                
-                let alert = UIAlertController(title: "알림", message:"로그인되었습니다.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "로그인창으로", style: UIAlertActionStyle.Default , handler: {(alert: UIAlertAction!) in
-                    
-                    print("login success, move to main page")
-                    
-                }))
-                self.presentViewController(alert, animated: true, completion: nil)
+                print("success")
             } else {
                 // The login failed. Check error to see why.
-                
-                let alert = UIAlertController(title: "오류", message:"로그인이 실패했습니다. 아이디와 비밀번호를 확인해주세요.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "로그인창으로", style: UIAlertActionStyle.Default , handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
-
             }
         }
     }
