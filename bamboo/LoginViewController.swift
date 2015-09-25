@@ -52,11 +52,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        print("start")
+
         animateViewMoving(true, moveValue: 200)
     }
     func textFieldDidEndEditing(textField: UITextField) {
-        print("end")
+
         animateViewMoving(false, moveValue: 200)
     }
 
